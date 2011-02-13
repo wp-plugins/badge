@@ -1,0 +1,59 @@
+=== Badge ===
+
+Contributors: eroux
+Tags: snippets, badges, admin, administration, jadbRequires at least: 2.8Tested up to: 3.0.4
+Stable tag: 1.0
+
+Display a badge (based the "badges") without requiring file-system access or knowledge of HTML.
+
+== Description ==
+
+Display "Badges" in the side-panel which points to a web-site and an image which is then used to build the "badge".
+Using the Widget you can choose whether to:
+
+1. (Optionally) display a Title
+1. Link to a site
+1. Required link to an image to mark that site (any size will work, but the "standard" seems to be 88 pixels wide by 31 pixels high)
+1. Pad the Badge (including centering the text); some people may prefer using their own CSS, so this is an optional configuration.
+1. Enable "Display Badge in a Box" (enabled by default)
+1. Enable the Displaying of a Drop-Shadow
+
+If more control is needed, or more badges need to be displayed, the [badges plugin](http://wordpress.org/extend/plugins/badges/ "Wordpress Plugin") on the Wordpress site might be a better fit.
+
+== Installation ==
+
+**Install**
+
+1. Unzip the `badges.zip` file.
+1. Upload `badges.php` to the `/wp-content/plugins/` directory.
+1. Activate the plugin through the 'Plugins' menu in WordPress.
+1. Use the "Badges" widget.
+
+**Upgrade**
+
+1. Follow your normal installtion process
+1. Open the Widget Control Panel for "Badges" and confirm settings.
+1. Sit back and enjoy...
+
+**Use the WordPress Plugin System**
+
+1. Select "Upgrade and Activate"
+1. Congratulate yourself on a sterling job.
+
+== Frequently Asked Questions ==
+
+None as yet
+
+== Screenshots ==
+
+1. Create a "Licensing" badge that points to the Creative Commons website and uses a CC 88x31 banner
+2. The result of the configuration in No 1
+3. Boxing a Badge to SpreadFirefox with an added drop-shadow
+4. The resultant Badge
+
+== Changelog ==
+ 
+= 1.0 =
+
+* Initial Public Release
+
