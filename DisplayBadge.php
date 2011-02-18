@@ -34,6 +34,7 @@ class DisplayBadge extends WP_Widget {
     //
     function widget($args, $instance) {		
         extract( $args );
+        $id = $args['widget_id'];
         $title = apply_filters('widget_title', $instance['title']);
         $destURL = $instance['destURL'];
         $destIMG = $instance['destIMG'];
@@ -50,7 +51,7 @@ class DisplayBadge extends WP_Widget {
             if ( $title )
                 echo $before_title . $title . $after_title; // This way we get to choose a "No Title" scenario...
 
-            print( "\n\t<div class='badge' " );
+            print( "\n\t<div id='inner-" . $id . "' class='badge' " );
 
             if ( $padbadge || $displayframe || $dropshadow  ) {
                 print( "style='" );
