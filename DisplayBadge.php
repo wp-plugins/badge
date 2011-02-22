@@ -1,7 +1,7 @@
 <?php
 /*
     Plugin Name: Display Badge
-    Plugin URI: http://www.damn.org.za/blog/DisplayBadge
+    Plugin URI: http://www.damn.org.za/blog/displaybadge
     Description: Individual Badge Version of DisplayBadges
     Author: Eugéne Roux
     Version: 1.1
