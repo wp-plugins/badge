@@ -1,11 +1,11 @@
 <?php
 /*
     Plugin Name: Display Badge
-    Plugin URI: http://www.damn.org.za/blog/displaybadge
+    Plugin URI: http://blog.damn.org.za/widgets/
     Description: Individual Badge Version of DisplayBadges
     Author: Eugéne Roux
-    Version: 1.1
-    Author URI: http://damn.org.za/blog/
+    Version: 1.2
+    Author URI: http://damn.org.za/
  */
 
 //
@@ -32,7 +32,7 @@ class DisplayBadge extends WP_Widget {
     //
     //  @see WP_Widget::widget
     //
-    function widget($args, $instance) {		
+    function widget($args, $instance) {
         extract( $args );
         $id = $args['widget_id'];
         $title = apply_filters('widget_title', $instance['title']);
@@ -86,7 +86,7 @@ class DisplayBadge extends WP_Widget {
             }
 
             print( "src=' " . $destIMG . " ' />\n" );
-            
+
             if ( $badgeNote ) {
                 print( "\t\t\t<br />\n\t\t\t" . $badgeNote . "\n" );
             }
@@ -102,7 +102,7 @@ class DisplayBadge extends WP_Widget {
     //
     //  @see WP_Widget::update
     //
-    function update($new_instance, $old_instance) {				
+    function update($new_instance, $old_instance) {
         $instance = $old_instance;
         $instance['title'] = strip_tags( $new_instance['title'] );
         $instance['destURL'] = $new_instance['destURL'];
@@ -125,9 +125,9 @@ class DisplayBadge extends WP_Widget {
         $destURL = $instance['destURL'];
         $destIMG = $instance['destIMG'];
         $badgeNote = $instance['badgeNote'];
-        $displayframe = $instance['displayframe'] ? "checked='checked'" : "";        
-        $padbadge = $instance['padbadge'] ? "checked='checked'" : "";        
-        $dropshadow = $instance['dropshadow'] ? "checked='checked'" : "";        
+        $displayframe = $instance['displayframe'] ? "checked='checked'" : "";
+        $padbadge = $instance['padbadge'] ? "checked='checked'" : "";
+        $dropshadow = $instance['dropshadow'] ? "checked='checked'" : "";
 
         print( "\t<p>\n\t\t<label for='" . $this->get_field_id("title") . "'>" ); _e( "Title:" );
         print( "\n\t\t\t<input class='widefat' id='" . $this->get_field_id("title") . "' name='" . $this->get_field_name("title") . "' type='text' value='" . $title . "' />\n\t\t</label>\n\t\t<em>May be left empty for no title</em>\n\t</p>\n" );
