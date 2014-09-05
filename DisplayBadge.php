@@ -4,7 +4,7 @@
     Plugin URI: http://blog.damn.org.za/widgets/
     Description: Individual Badge Version of DisplayBadges
     Author: Eugéne Roux
-    Version: 1.2
+    Version: 1.3
     Author URI: http://damn.org.za/
  */
 
