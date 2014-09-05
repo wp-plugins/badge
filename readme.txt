@@ -3,7 +3,7 @@
 Contributors: eroux
 Tags: snippets, badges, admin, administration, jadb
 Requires at least: 2.8
-Tested up to: 3.9
+Tested up to: 4.0
 Stable tag: trunk
 
 Display a badge (based the "badges") without requiring file-system access or knowledge of HTML.
@@ -11,6 +11,9 @@ Display a badge (based the "badges") without requiring file-system access or kno
 == Description ==
 
 Display "Badges" in the side-panel which points to a web-site and an image which is then used to build the "badge".
+
+To access the configuration you have to go to ***Appearance* > *Widgets*** and edit the settings in the Panel.
+
 Using the Widget you can choose whether to:
 
 1. (Optionally) display a Title
