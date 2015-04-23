@@ -3,7 +3,7 @@
 Contributors: eroux
 Tags: snippets, badges, admin, administration, jadb
 Requires at least: 2.8
-Tested up to: 4.0
+Tested up to: 4.2
 Stable tag: trunk
 
 Display a badge (based the "badges") without requiring file-system access or knowledge of HTML.
